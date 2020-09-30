@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/EditTextStyle"
+        android:layout_margin="@dimen/default_margin"
+        android:id="@+id/ll"
+        android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Stephen Kwadwo Yiadom Owusu"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txtdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txtrTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reminder Time"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <TextView
+                android:id="@+id/txtmess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Happy Birthday!!! Wishing you a happy day"
+                android:textSize="16dp"
+                android:lines="3"
+                android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Update"
+            style="@style/LogInButton"
+            android:padding="2dp"
+            android:paddingTop="@dimen/default_margin"
+            android:layout_gravity="right"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

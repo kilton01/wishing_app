@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Wish Your Friend Now"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp"
+                    android:typeface="serif" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nom"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin">
+
+                    <EditText
+                        android:id="@+id/dob"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/date_birth"
+                        android:inputType="date"/>
+
+                    <ImageView
+                        android:id="@+id/imgStart"
+                        style="@style/EditTextStyle"
+                        android:layout_width="45dp"
+                        android:layout_height="34dp"
+                        android:layout_alignTop="@+id/dob"
+                        android:layout_alignBottom="@+id/dob"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_toStartOf="@+id/dob"
+                        android:layout_toLeftOf="@+id/dob"
+                        android:src="@android:drawable/ic_menu_my_calendar" />
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/pnum"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phoneNum1"
+                        android:text="+233"
+                        android:inputType="phone"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/mess"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Message" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin">
+
+                    <EditText
+                        android:id="@+id/time"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Set Time"
+                        android:inputType="time"/>
+
+                    <ImageView
+                        android:id="@+id/setTime"
+                        style="@style/EditTextStyle"
+                        android:layout_width="45dp"
+                        android:layout_height="34dp"
+                        android:layout_alignTop="@+id/time"
+                        android:layout_alignBottom="@+id/time"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_toStartOf="@+id/time"
+                        android:layout_toLeftOf="@+id/time"
+                        android:src="@drawable/ic_access_time_black_24dp"/>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/butt"
+                    style="@style/LogInButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/default_margin"
+                    android:text="submit"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</LinearLayout>
